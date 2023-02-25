@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="532.0" prefWidth="795.0" style="-fx-background-color: #FB8C00;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mylabproject.FacultyLoginController">
+    <children>
+        <ImageView fitHeight="474.0" fitWidth="565.0" layoutX="230.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/Facultypage2.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="45.0" layoutY="36.0" prefHeight="379.0" prefWidth="308.0" style="-fx-background-color: white;">
+            <children>
+                <Text layoutX="93.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      Log In" wrappingWidth="90.0">
+                    <font>
+                        <Font name="Book Antiqua Bold" size="20.0" />
+                    </font>
+                </Text>
+                <VBox layoutX="42.0" layoutY="101.0" prefHeight="85.0" prefWidth="225.0" spacing="7.0">
+                    <children>
+                        <TextField fx:id="UserTf1" prefHeight="26.0" prefWidth="227.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+                  <PasswordField fx:id="PassTf" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 1px 0px; -fx-border-color: #000000;" />
+                    </children>
+                </VBox>
+                <ImageView fitHeight="24.0" fitWidth="18.0" layoutX="24.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/AdminIcon.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="24.0" fitWidth="18.0" layoutX="24.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/bookpassword.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="47.0" layoutX="141.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/UserIcon.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="facultyloginbt" layoutX="37.0" layoutY="207.0" mnemonicParsing="false" onAction="#LoginBt" prefHeight="30.0" prefWidth="234.0" style="-fx-background-color: #FA9C18;" text="Log in" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+            </children>
+        </AnchorPane>
+        <Text layoutX="368.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Better than a thousand days of diligent study is  one day with a great teacher.&quot;" wrappingWidth="426.84765625">
+            <font>
+                <Font name="Forte" size="24.0" />
+            </font>
+        </Text>
+      <Button fx:id="backbt" layoutX="14.0" layoutY="494.0" mnemonicParsing="false" onAction="#backBt" prefHeight="30.0" prefWidth="43.0" style="-fx-background-color: #FF6700; -fx-border-color: white;" text="Back" textFill="#fff6f6">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

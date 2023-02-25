@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mylabproject.StudentFacultyProfileController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="428.0" prefWidth="142.0" style="-fx-background-color: #ED820E;">
+         <children>
+            <Text fill="#fffbfb" layoutX="12.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Welcome " wrappingWidth="151.0">
+               <font>
+                  <Font name="Algerian" size="23.0" />
+               </font>
+            </Text>
+            <Text fill="#f8f5f5" layoutX="48.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    To" wrappingWidth="79.0">
+               <font>
+                  <Font name="Algerian" size="21.0" />
+               </font>
+            </Text>
+            <Text fill="#f2ebeb" layoutX="17.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile" wrappingWidth="108.541015625">
+               <font>
+                  <Font name="Algerian" size="28.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="73.0" fitWidth="109.0" layoutX="31.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../AllLogo/UIUOrange.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutY="2.0" mnemonicParsing="false" onAction="#backbt" style="-fx-background-color: #FF6700;" text="BACK" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="88.0" fitWidth="123.0" layoutX="325.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="233.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="49.693359375">
+         <font>
+            <Font name="Arial Narrow Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="172.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    Room Number " wrappingWidth="123.0">
+         <font>
+            <Font name="Arial Narrow Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="195.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Department " wrappingWidth="98.89337158203125">
+         <font>
+            <Font name="Arial Narrow Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="184.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address" wrappingWidth="98.89337158203125">
+         <font>
+            <Font name="Arial Narrow Bold" size="16.0" />
+         </font>
+      </Text>
+      <VBox layoutX="293.0" layoutY="115.0" prefHeight="147.0" prefWidth="280.0" spacing="10.0">
+         <children>
+            <TextField fx:id="nametf" editable="false" prefHeight="25.0" prefWidth="248.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+            <TextField fx:id="emailtf" editable="false" prefHeight="25.0" prefWidth="248.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+            <TextField fx:id="depttf" editable="false" prefHeight="25.0" prefWidth="248.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+            <TextField fx:id="roomtf" prefHeight="25.0" prefWidth="248.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+         </children>
+      </VBox>
+      <DatePicker fx:id="DataPicer" layoutX="289.0" layoutY="330.0" prefHeight="25.0" prefWidth="287.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 1px 0px;" />
+      <Button fx:id="bookbt" layoutX="207.0" layoutY="327.0" mnemonicParsing="false" onAction="#bookBt" style="-fx-background-color: #FF6700;" text="Book" textFill="#fffafa">
+         <font>
+            <Font name="Arial Narrow Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="counselling_days" editable="false" layoutX="289.0" layoutY="282.0" prefHeight="26.0" prefWidth="287.0" />
+   </children>
+</AnchorPane>

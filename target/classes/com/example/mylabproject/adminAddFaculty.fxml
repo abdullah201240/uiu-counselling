@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="915.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mylabproject.AdminAddFacultyController">
+   <children>
+      <VBox prefHeight="534.0" prefWidth="175.0" style="-fx-background-color: #FF6700;">
+         <children>
+            <Pane prefHeight="142.0" prefWidth="172.0" />
+            <Button fx:id="homebt" mnemonicParsing="false" onAction="#homebt" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: #FF6700;" text="Home" textFill="#ebe1e1">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ViewFacultyButt" mnemonicParsing="false" onAction="#ViewFacultyBt" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: #FF6700;" text="View  All Faculty" textFill="#fcf8f8">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddFacultyButt" mnemonicParsing="false" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: orange;" text="Add Faculty" textFill="#fcf8f8">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ViewStudentButt" mnemonicParsing="false" onAction="#ViewStudentBt" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: #FF6700;" text="View All Student" textFill="#fcf8f8">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddStudentButt" mnemonicParsing="false" onAction="#AddStudentBt" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: #FF6700;" text="Add Student" textFill="#fcf8f8">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="allCoursesbt" mnemonicParsing="false" onAction="#allCoursesbt" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: #FF6700;" text="View All Courses" textFill="#fcf8f8">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="addCoursebt" mnemonicParsing="false" onAction="#AddCourseBt" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: #FF6700;" text="Add Course" textFill="#fcf8f8">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Pane fx:id="PnlStatus" layoutX="173.0" layoutY="75.0" prefHeight="77.0" prefWidth="743.0" style="-fx-background-color: #FA9C18;">
+         <children>
+            <Label fx:id="lblStatus" layoutX="27.0" layoutY="20.0" prefHeight="28.0" prefWidth="141.0" text="Add Faculty" textFill="#f2eaea">
+               <font>
+                  <Font name="Baskerville Old Face" size="26.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Label layoutX="255.0" layoutY="192.0" prefHeight="28.0" prefWidth="72.0" text="Name:" />
+      <Label layoutX="255.0" layoutY="220.0" prefHeight="28.0" prefWidth="72.0" text="ID:" />
+      <Label layoutX="255.0" layoutY="248.0" prefHeight="28.0" prefWidth="72.0" text="Department:" />
+      <Label layoutX="255.0" layoutY="276.0" prefHeight="28.0" prefWidth="72.0" text="Designation:" />
+      <Label layoutX="255.0" layoutY="304.0" prefHeight="28.0" prefWidth="72.0" text="Email:" />
+      <TextField fx:id="emailtf" layoutX="328.0" layoutY="306.0" />
+      <TextField fx:id="idtf" layoutX="328.0" layoutY="222.0" />
+      <TextField fx:id="nametf" layoutX="328.0" layoutY="194.0" />
+      <ComboBox fx:id="deptcmb" layoutX="328.0" layoutY="250.0" onAction="#deptBt" prefWidth="150.0" />
+      <ComboBox fx:id="designationcmb" layoutX="327.0" layoutY="278.0" onAction="#designationBt" prefWidth="150.0" />
+      <Button fx:id="addbt" layoutX="366.0" layoutY="425.0" mnemonicParsing="false" onAction="#addBt" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #FF6700;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="rankcmb" layoutX="327.0" layoutY="333.0" onAction="#rankCMB" prefWidth="150.0" />
+      <Label layoutX="255.0" layoutY="332.0" prefHeight="28.0" prefWidth="72.0" text="Rank:" />
+      <Label fx:id="room" layoutX="255.0" layoutY="359.0" prefHeight="28.0" prefWidth="72.0" text="Room:" />
+      <TextField fx:id="roomtf" layoutX="328.0" layoutY="360.0" />
+   </children>
+</AnchorPane>

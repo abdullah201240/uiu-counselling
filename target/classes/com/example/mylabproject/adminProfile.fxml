@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="915.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mylabproject.AdminProfileController">
+    <children>
+        <VBox prefHeight="463.0" prefWidth="175.0" style="-fx-background-color: #FF6700;">
+            <children>
+                <Pane prefHeight="142.0" prefWidth="172.0" />
+                <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: orange;" text="Home" textFill="#ebe1e1">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="ViewFacultyButt" mnemonicParsing="false" onAction="#viewallfacultybt" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: oramge;" text="View  All Faculty" textFill="#fcf8f8">
+                    <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="AddFacultyButt" mnemonicParsing="false" onAction="#addfacultybt" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: #FF6700;" text="Add Faculty" textFill="#fcf8f8">
+                    <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="ViewStudentButt" mnemonicParsing="false" onAction="#viewallstudentbt" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: #FF6700;" text="View All Student" textFill="#fcf8f8">
+                    <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="AddStudentButt" mnemonicParsing="false" onAction="#addstudentbt" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: #FF6700;" text="Add Student" textFill="#fcf8f8">
+                    <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                    </font>
+                </Button>
+            <Button mnemonicParsing="false" onAction="#viewallcourses" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: #FF6700;" text="View All Courses" textFill="#fcf8f8">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#addcourses" prefHeight="48.0" prefWidth="172.0" style="-fx-background-color: #FF6700;" text="Add Courses" textFill="#fcf8f8">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Button>
+            </children>
+        </VBox>
+        <Pane fx:id="PnlStatus" layoutX="173.0" layoutY="75.0" prefHeight="77.0" prefWidth="743.0" style="-fx-background-color: #FA9C18;">
+            <children>
+                <Label fx:id="lblStatus" layoutX="27.0" layoutY="26.0" prefHeight="28.0" prefWidth="141.0" text="Home" textFill="#f2eaea">
+                    <font>
+                        <Font name="System Italic" size="26.0" />
+                    </font>
+                </Label>
+            </children></Pane>
+      <VBox layoutX="690.0" layoutY="166.0" prefHeight="234.0" prefWidth="211.0" style="-fx-background-color: white;">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Pane prefHeight="221.0" prefWidth="190.0" style="-fx-background-color: #F2F3F4;">
+               <children>
+                  <Text fill="#d1c9c9" layoutX="28.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Total used Students" wrappingWidth="161.44921875">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="percentage" layoutX="41.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="559">
+                     <font>
+                        <Font name="System Bold Italic" size="53.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="70.0" fitWidth="80.0" layoutX="54.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/194931.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane layoutX="239.0" layoutY="183.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F2F3F4;">
+         <children>
+            <Text fill="#d1c9c9" layoutX="59.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Teachers" wrappingWidth="127.8492431640625">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="teacher" layoutX="69.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="95">
+               <font>
+                  <Font name="System Bold Italic" size="53.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="70.0" fitWidth="68.0" layoutX="59.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/1184448.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="468.0" layoutY="183.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F2F3F4;">
+         <children>
+            <Text fill="#d1c9c9" layoutX="69.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Students" wrappingWidth="127.8492431640625">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="student" layoutX="41.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="559">
+               <font>
+                  <Font name="System Bold Italic" size="53.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="70.0" fitWidth="80.0" layoutX="54.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/images.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutY="463.0" prefHeight="70.0" prefWidth="175.0" style="-fx-background-color: #FF6700;" />
+      <Button layoutX="53.0" layoutY="491.0" mnemonicParsing="false" onAction="#logoutBt" style="-fx-background-color: #FA9C18;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

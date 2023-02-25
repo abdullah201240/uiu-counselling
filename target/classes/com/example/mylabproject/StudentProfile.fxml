@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mylabproject.StudentProfileController">
+   <children>
+      <ImageView fitHeight="525.0" fitWidth="1119.0" layoutX="-100.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/StudentProfile%20(2).jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="329.0" layoutY="240.0" prefHeight="82.0" prefWidth="222.0" style="-fx-background-color: white;">
+         <children>
+            <Text layoutX="61.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   Department: " wrappingWidth="130.89324951171875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="87.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id:" wrappingWidth="94.09332275390625">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text layoutX="443.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" wrappingWidth="110.09332275390625">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nametf" editable="false" layoutX="517.0" layoutY="214.0" prefHeight="26.0" prefWidth="262.0" />
+      <TextField fx:id="studentidtf" editable="false" layoutX="517.0" layoutY="263.0" prefHeight="26.0" prefWidth="262.0" />
+      <TextField fx:id="depttf" editable="false" layoutX="517.0" layoutY="309.0" prefHeight="26.0" prefWidth="262.0" />
+      <TextField fx:id="emailtf" editable="false" layoutX="517.0" layoutY="354.0" prefHeight="26.0" prefWidth="262.0" />
+      <Button layoutX="14.0" layoutY="486.0" mnemonicParsing="false" onAction="#backbt" style="-fx-background-color: #FF6700;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="443.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Email : " wrappingWidth="94.09332275390625">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Circle fx:id="imageview" fill="DODGERBLUE" layoutX="648.0" layoutY="76.0" radius="76.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="542.0" layoutY="160.0" mnemonicParsing="false" onAction="#save" prefHeight="32.0" prefWidth="63.0" style="-fx-background-color: #FF6700;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Button>
+      <Button fx:id="img" layoutX="698.0" layoutY="160.0" mnemonicParsing="false" onAction="#set" prefHeight="32.0" prefWidth="110.0" style="-fx-background-color: #FF6700;" text="Select Image" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Button>
+      <Button layoutX="605.0" layoutY="422.0" mnemonicParsing="false" onAction="#changepassbt" style="-fx-background-color: #FF6700;" text="Change Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

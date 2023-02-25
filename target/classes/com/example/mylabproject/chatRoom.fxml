@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ChatAdda" prefHeight="660.0" prefWidth="376.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mylabproject.ChatRoomController">
+    <children>
+        <StackPane layoutY="67.0" prefHeight="595.0" prefWidth="376.0">
+            <children>
+                <Pane fx:id="chat" prefHeight="510.0" prefWidth="364.0" style="-fx-background-color: #FA9C18;">
+                    <children>
+                        <AnchorPane layoutX="11.0" layoutY="550.0" prefHeight="45.0" prefWidth="351.0" style="-fx-background-color: #FA9C18;">
+                            <children>
+                                <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="318.0" layoutY="3.0" onMouseClicked="#handleSendEvent" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/icons8-sent.png" />
+                                    </image>
+                                </ImageView>
+                                <TextField fx:id="msgField" layoutY="2.0" onKeyPressed="#sendMessageByKey" prefHeight="35.0" prefWidth="314.0" promptText="Write messages here...." styleClass="msgBox">
+                                    <font>
+                                        <Font name="Arial" size="19.0" />
+                                    </font>
+                                </TextField>
+                            </children>
+                        </AnchorPane>
+                        <TextArea fx:id="msgRoom" editable="false" layoutX="-7.0" layoutY="2.0" prefHeight="542.0" prefWidth="384.0" style="-fx-background-color: #4cbb17;" wrapText="true">
+                            <font>
+                                <Font name="Arial" size="16.0" />
+                            </font>
+                        </TextArea>
+                    </children>
+                </Pane>
+            </children>
+        </StackPane>
+        <AnchorPane prefHeight="67.0" prefWidth="376.0" style="-fx-background-color: #FA9C18;">
+            <children>
+                <Label fx:id="clientName" layoutX="69.0" layoutY="16.0" prefHeight="34.0" prefWidth="204.0" text="Username" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font name="Arial" size="19.0" />
+                    </font>
+                </Label>
+                <Button layoutX="280.0" layoutY="13.0" mnemonicParsing="false" onAction="#homebt" style="-fx-background-color: #FF6700;" styleClass="allButton" text="Home" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Black" size="18.0" />
+                    </font>
+                </Button>
+                <Circle fx:id="showProPic" fill="#ff6700" layoutX="35.0" layoutY="34.0" radius="30.0" stroke="WHITE" strokeType="INSIDE" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
