@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mylabproject.AdminLoginController">
+   <children>
+      <ImageView fitHeight="388.0" fitWidth="688.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/uiu.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="15.0" layoutY="125.0" prefHeight="247.0" prefWidth="280.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="40.0" fitWidth="44.0" layoutX="136.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/AdminIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="18.0" layoutX="22.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/bookemail.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="18.0" layoutX="22.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/bookpassword.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usertf" layoutX="48.0" layoutY="214.0" prefHeight="26.0" prefWidth="214.0" />
+      <Button fx:id="loginbt" layoutX="128.0" layoutY="284.0" mnemonicParsing="false" onAction="#loginBt" style="-fx-background-color: #FF6700;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="114.0" layoutY="171.0" prefHeight="26.0" prefWidth="82.0" text="  Log in">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backbt" layoutX="-1.0" layoutY="1.0" mnemonicParsing="false" onAction="#backBt" prefHeight="27.0" prefWidth="46.0" style="-fx-background-color: #FF6700;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passtf" layoutX="48.0" layoutY="245.0" prefHeight="26.0" prefWidth="214.0" />
+   </children>
+</AnchorPane>

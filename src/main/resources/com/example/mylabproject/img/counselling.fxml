@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="376.0" prefWidth="582.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="education.learning.system.CounsellingController">
+   <children>
+      <ImageView fitHeight="227.0" fitWidth="583.0" layoutX="-1.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1stpagebackground.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@counselling1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="220.0" layoutX="21.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@counselling%20-%20Copy.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="291.0" layoutY="67.0" prefHeight="247.0" prefWidth="229.0" style="-fx-background-color: #FA9C18;">
+         <children>
+            <VBox layoutX="25.0" layoutY="45.0" prefHeight="143.0" prefWidth="179.0" spacing="7.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="178.0" style="-fx-background-radius: 5; -fx-background-color: white;" text="Admin">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="199.0" style="-fx-background-radius: 5; -fx-background-color: white;" text="Faculty">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" style="-fx-background-radius: 5; -fx-background-color: white;" text="Student">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="49.0" fitWidth="77.0" layoutX="385.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@uiulogo1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
